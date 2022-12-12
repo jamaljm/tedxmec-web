@@ -1,0 +1,57 @@
+
+.imac {
+  width: 600px;
+  perspective: 250px;
+  position: relative;
+}
+
+.screen1 {
+  height: 360px;
+  background: no-repeat center
+    url("https://cdn.dribbble.com/users/200587/screenshots/3395714/media/030d76665d41a3511c3b7f32d53a162d.gif");
+  background-size: contain;
+  box-sizing: border-box;
+  border: 24px solid black;
+  border-top: 32px solid black;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  overflow: hidden;
+  
+}
+
+.facetime__camera {
+  background: #222;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -21px;
+}
+
+.chin {
+  height: 64px;
+  background: #dadada;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.logo {
+  width: 2em;
+  display: block;
+  margin: 0 auto;
+  transform: translatey(12px);
+}
+
+.stand {
+  margin: 0 auto;
+  width: 120px;
+  height: 100px;
+  background: linear-gradient(to bottom, #c1c1c1, #efefef);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  perspective-origin: 150% 150%;
+  transform-style: preserve-3d;
+  transform: rotatex(100deg);
+  margin-top: -26px;
+  box-shadow: 0 4px 0 0 #d5d5d5;
+}
