@@ -53,14 +53,32 @@ export function ParallaxText({ children }) {
   });
 
   return (
-    <div className="parallax">
-      <motion.div className="scroller" style={{ x }}>
+    <div className="parallax1">
+      <motion.div className="scroller1" style={{ x }}>
         <motion.span style={{ skew: skewVelocityFactor }}>
           {children}
         </motion.span>
         <motion.span style={{ skew: skewVelocityFactor }}>
           {children}
         </motion.span>
+        <motion.span style={{ skew: skewVelocityFactor }}>
+          {children}
+        </motion.span>
+        <motion.span style={{ skew: skewVelocityFactor }}>
+          {children}
+        </motion.span>{" "}
+        <motion.span style={{ skew: skewVelocityFactor }}>
+          {children}
+        </motion.span>
+        <motion.span style={{ skew: skewVelocityFactor }}>
+          {children}
+        </motion.span>{" "}
+        <motion.span style={{ skew: skewVelocityFactor }}>
+          {children}
+        </motion.span>
+        <motion.span style={{ skew: skewVelocityFactor }}>
+          {children}
+        </motion.span>{" "}
         <motion.span style={{ skew: skewVelocityFactor }}>
           {children}
         </motion.span>

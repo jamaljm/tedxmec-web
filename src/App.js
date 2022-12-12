@@ -9,6 +9,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import Butterfly from "./components/Butterfly/Butterfly";
 import { useEffect, useState } from "react";
+import { ParallaxText } from "./components/ScrollBanner/Scrollbanner";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,10 +25,9 @@ function App() {
         <>
           <NavBar />
           <Banner />
-          <Skills />
+        
           <Projects />
           <Contact />
-          <Butterfly />
 
           <Footer />
         </>
