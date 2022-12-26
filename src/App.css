@@ -233,11 +233,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+    padding: 160px 0 100px 0;
+  background-image: url('./assets/img/banner-bg.png');    
   background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
 }
 .banner .tagline {
   font-weight: 700;
@@ -358,7 +363,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 86%;
 }
 .project .nav.nav-pills {
   width: 72%;
@@ -468,8 +473,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+background: linear-gradient(90.21deg, #16010e -5.91%, #000d18 111.58%);
+  padding: 50px 0 60px 0;
 }
 .contact img {
   width: 92%;
@@ -547,12 +552,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .newsletter-bx {
-  background: #FFFFFF;
+  background: #292929;
   border-radius: 55px;
   color: #121212;
-  padding: 85px 125px;
+  padding: 10px 125px;
   margin-bottom: 80px;
   margin-top: -122px;
+    display: flex;
+    align-items: center;
+      justify-content: center;
+}
+.footer img {
+  width: 26%;
+}
+.newsletter-bx img{
+  width:27rem;
 }
 .newsletter-bx h3 {
   font-weight: 700;
@@ -606,13 +620,95 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
-.footer img {
-  width: 26%;
-}
+
 .footer p {
   font-weight: 400;
   font-size: 14px;
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+
+.welcometag{
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+  color: #fff;
+  margin-bottom: 30px;
+  background: rgba(215, 0, 0, 0.621);
+  padding: 14px 30px; 
+
+}
+.project{
+  padding: 60px 0 60px 0;
+  background: rgba(255, 255, 255, 0.115);
+  margin: 60px;
+  border: 1px solid #fff;
+}
+.contact_box{
+    padding: 0px 0 100px 0;
+      margin: 0px 60px;
+      display: flex;
+      justify-content: center;
+}
+.contact_databox{
+  background: rgba(255, 255, 255, 0.08);
+  margin: 60px;
+  border: 1px solid #fff;
+  display: flex;
+  padding: 20px 30px;
+  justify-content: center;
+}
+.contact-head h3{
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.contact-head {
+  display: flex;
+  justify-content: center;
+}
+.contact_data_left img{
+  width: 25px;
+  height: 25px;
+}
+.contact_data_right{
+    display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 10px;
+}
+
+@media screen and (max-width: 700px) {
+
+.project {
+    padding: 60px 0 60px 0;
+    background: rgba(255, 255, 255, 0.115);
+    margin: 15px;
+    border: 1px solid #fff;
+  }
+
+    .contact_box {
+      padding: 0px 0 100px 0;
+      margin: 0px 60px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+        .contact_databox {
+          background: rgba(255, 255, 255, 0.08);
+          margin: 23px 0px;
+          border: 1px solid #fff;
+          display: flex;
+          padding: 20px 30px;
+          justify-content: center;
+        }
+
+                .newsletter-bx img {
+                  width: 20rem;
+                }
 }

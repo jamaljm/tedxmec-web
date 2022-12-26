@@ -44,52 +44,47 @@ export const Contact = () => {
   };
 
   return (
-    <section className="contact" id="connect">
-      <Container>
-        <Row className="align-items-center">
-          <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
-              }
-            </TrackVisibility>
-          </Col>
-          <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Get In Touch</h2>
-                <form onSubmit={handleSubmit}>
-                  <Row>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)}/>
-                    </Col>
-                    <Col size={12} className="px-1">
-                      <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
-                    </Col>
-                    {
-                      status.message &&
-                      <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                      </Col>
-                    }
-                  </Row>
-                </form>
-              </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
+    <section className="contact" id="contact">
+      <div className="contact-head">
+        <h3>Contact Us</h3>
+      </div>
+      <div className="contact_box">
+        <div className="contact_databox">
+          <div className="contact_data_left">
+            <h4 className="contact_data_title">Amith Tony Joseph</h4>
+            <p className="contact_data_text">Operations Head</p>
+
+            <div className="contact_data_right">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA6UlEQVR4nO3VzyoFYRjA4RGHOpfB2SpyC+rYuwcW3ICs2ShxEYe9TpT7YINroGw4xaMv32GaZiZTrxW/C3ifvj/zTVH81yUcY+K7d1xhLgp4Ud9KFPDcAAyjgLsGYDcKGDcA51HAfgMwigLWaoY/YTEEyMhtBdgMG56B7dLwVwyigQU8lJBrzEQjG/krnnYQCmTk9Gv8Z4fllWAJZ+mGYQfrWMbsT4EeLitI2q5BOvh8u+oad1lFvwZJB9/WW9et6uGkciatdQKmpQcP978GpDCPLdy0zJ8UEWEVe7jIr/Bj/lkdhQDFn+kDZFFDBt8rh0QAAAAASUVORK5CYII="></img>
+              <p className="contact_data_text">+91 974 239 232</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="contact_databox">
+          <div className="contact_data_left">
+            <h4 className="contact_data_title">Janice Maria Jons</h4>
+            <p className="contact_data_text">Co-organizer</p>
+
+            <div className="contact_data_right">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA6UlEQVR4nO3VzyoFYRjA4RGHOpfB2SpyC+rYuwcW3ICs2ShxEYe9TpT7YINroGw4xaMv32GaZiZTrxW/C3ifvj/zTVH81yUcY+K7d1xhLgp4Ud9KFPDcAAyjgLsGYDcKGDcA51HAfgMwigLWaoY/YTEEyMhtBdgMG56B7dLwVwyigQU8lJBrzEQjG/krnnYQCmTk9Gv8Z4fllWAJZ+mGYQfrWMbsT4EeLitI2q5BOvh8u+oad1lFvwZJB9/WW9et6uGkciatdQKmpQcP978GpDCPLdy0zJ8UEWEVe7jIr/Bj/lkdhQDFn+kDZFFDBt8rh0QAAAAASUVORK5CYII="></img>
+              <p className="contact_data_text">+91 974 239 232</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="contact_databox">
+          <div className="contact_data_left">
+            <h4 className="contact_data_title">Vishnumaya S Unni</h4>
+            <p className="contact_data_text">Licensee</p>
+
+            <div className="contact_data_right">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA6UlEQVR4nO3VzyoFYRjA4RGHOpfB2SpyC+rYuwcW3ICs2ShxEYe9TpT7YINroGw4xaMv32GaZiZTrxW/C3ifvj/zTVH81yUcY+K7d1xhLgp4Ud9KFPDcAAyjgLsGYDcKGDcA51HAfgMwigLWaoY/YTEEyMhtBdgMG56B7dLwVwyigQU8lJBrzEQjG/krnnYQCmTk9Gv8Z4fllWAJZ+mGYQfrWMbsT4EeLitI2q5BOvh8u+oad1lFvwZJB9/WW9et6uGkciatdQKmpQcP978GpDCPLdy0zJ8UEWEVe7jIr/Bj/lkdhQDFn+kDZFFDBt8rh0QAAAAASUVORK5CYII="></img>
+              <p className="contact_data_text">+91 974 239 232</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  )
+  );
 }
