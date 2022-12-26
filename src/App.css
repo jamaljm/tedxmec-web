@@ -711,4 +711,11 @@ background: linear-gradient(90.21deg, #16010e -5.91%, #000d18 111.58%);
                 .newsletter-bx img {
                   width: 20rem;
                 }
+
+                .navbar-brand img{
+              width: 11rem;
+                  }
+                  .container{
+                    margin-left: 10px;
+                  }
 }
