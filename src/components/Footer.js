@@ -16,13 +16,19 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href=""><img src={navIcon1} alt="Icon" /></a>
-              <a href=""><img src={navIcon2} alt="Icon" /></a>
-              <a href=""><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://www.instagram.com/tedxmec">
+                <img src={navIcon1} alt="Icon" />
+              </a>
+              <a href="https://www.instagram.com/tedxmec">
+                <img src={navIcon2} alt="Icon" />
+              </a>
+              <a href="https://www.instagram.com/tedxmec">
+                <img src={navIcon3} alt="Icon" />
+              </a>
             </div>
           </Col>
         </Row>
       </Container>
     </footer>
-  )
+  );
 }

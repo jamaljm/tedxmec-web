@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const [delta, setDelta] = useState(240 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Coming Soon" ];
+  const toRotate = ["Coming Soon"];
   const period = 3000;
 
   useEffect(() => {
@@ -17,33 +17,37 @@ export const Banner = () => {
       tick();
     }, delta);
 
-    return () => { clearInterval(ticker) };
-  }, [text])
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
+      setDelta((prevDelta) => prevDelta / 2);
     }
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
+      setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
-    } else if (isDeleting && updatedText === '') {
+    } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
       setDelta(500);
     } else {
-      setIndex(prevIndex => prevIndex + 1);
+      setIndex((prevIndex) => prevIndex + 1);
     }
-  }
+  };
 
   return (
     <section className="banner" id="home">
@@ -74,9 +78,8 @@ export const Banner = () => {
               )}
             </TrackVisibility>
           </Col>
-         
         </Row>
       </Container>
     </section>
   );
-}
+};
