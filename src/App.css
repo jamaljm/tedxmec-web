@@ -718,4 +718,14 @@ background: linear-gradient(90.21deg, #16010e -5.91%, #000d18 111.58%);
                   .container{
                     margin-left: 10px;
                   }
+                                    .logonav img {
+                                      height: 6rem !important;
+                                    }
+}
+
+.logonav img{
+  height: 7rem !important;
+}
+.aaa{
+  padding: 0px 100px;
 }
